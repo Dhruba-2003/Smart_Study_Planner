@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Smart Study Planner</h1>
+        <p>Organize your study schedule and track your academic tasks</p>
+    </header>
+
+    <main>
+        <section class="task-input">
+            <h2>Add New Study Task</h2>
+            <form id="taskForm">
+                <label for="taskTitle">Task Title:</label>
+                <input type="text" id="taskTitle" name="taskTitle" required />
+
+                <label for="taskDescription">Description:</label>
+                <textarea id="taskDescription" name="taskDescription" rows="3"></textarea>
+
+                <label for="taskDueDate">Due Date:</label>
+                <input type="date" id="taskDueDate" name="taskDueDate" required />
+
+                <label for="taskReminder">Reminder Time:</label>
+                <input type="time" id="taskReminder" name="taskReminder" />
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list">
+            <h2>Your Study Tasks</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <audio id="reminderSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+</body>
+</html>
