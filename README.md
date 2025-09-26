@@ -46,4 +46,3 @@ Love it? Got ideas? Fork this repo and add your twist – maybe task categories,
 
 ---
 
-Made with ❤️ for students everywhere. Crush those goals and happy studying! 🎯📖
